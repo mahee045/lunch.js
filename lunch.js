@@ -18,14 +18,14 @@ const whatToDoForLunch = function(hungry, availableTime) {
   console.log("availableTime is", availableTime);
 
   if (hungry === false) {  // Explicit check for 'hungry' being false
-    console.log("You're not hungry. Get back to work!");
+    console.log("Wait until your hungry!");
   } else {
     if (availableTime < 20) {
-      console.log("Pick something up and eat it in the lab.");
+      console.log("Pick up a snack or grab something from home");
     } else if (availableTime >= 20 && availableTime <= 30) {
-      console.log("You should try a place nearby.");
+      console.log("You deserve a break, you could probably could cook something");
     } else {
-      console.log("You're in a bootcamp! Reconsider how much time you actually have.");
+      console.log("You're in a bootcamp so reconsider how much time you actually have.");
     }
   }
 }
